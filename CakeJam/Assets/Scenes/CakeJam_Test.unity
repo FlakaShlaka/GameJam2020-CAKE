@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657785, g: 0.4964131, b: 0.5748169, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028615, g: 0.22571655, b: 0.30692413, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94,10 +94,11 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -135,8 +136,13 @@ PrefabInstance:
     - target: {fileID: 2617951283538252754, guid: b14c45122895547428095bc4576815b6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252756, guid: b14c45122895547428095bc4576815b6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2fe1f6d4eb7b94eb78bd6e1f4e338d66, type: 2}
     - target: {fileID: 2617951283538252757, guid: b14c45122895547428095bc4576815b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +198,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252759, guid: b14c45122895547428095bc4576815b6,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14c45122895547428095bc4576815b6, type: 3}
 --- !u!1 &705507993
@@ -219,8 +230,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -267,7 +279,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 8.392366e+12, z: 1e-45, w: 8.392366e+12}
+  m_BoundingSphereOverride: {x: 1e-45, y: 1e-45, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -380,6 +392,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particles_Glitter_White
       objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252756, guid: d6747429aedb148dd81d93d542c5592a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49fc5e7a8fafb4c869b11ff193676f56, type: 2}
     - target: {fileID: 2617951283538252757, guid: d6747429aedb148dd81d93d542c5592a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,6 +452,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252759, guid: d6747429aedb148dd81d93d542c5592a,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6747429aedb148dd81d93d542c5592a, type: 3}
 --- !u!1001 &2046468746
@@ -449,6 +471,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particles_Glitter_Rainbow
       objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252756, guid: 59cc8745a1d9c4b908b06942608bd606,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 50821cf57eee14fd78e727304d763a27, type: 2}
     - target: {fileID: 2617951283538252757, guid: 59cc8745a1d9c4b908b06942608bd606,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -513,6 +540,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lengthInSec
       value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617951283538252759, guid: 59cc8745a1d9c4b908b06942608bd606,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59cc8745a1d9c4b908b06942608bd606, type: 3}
@@ -655,6 +687,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -678,6 +711,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -704,6 +738,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -728,6 +763,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
