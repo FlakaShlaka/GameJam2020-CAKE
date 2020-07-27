@@ -17,9 +17,9 @@ public class BallController : MonoBehaviour
         float xSpeed = Input.GetAxis("Horizontal");
         //float ySpeed = Input.GetAxis("Vertical");
 
-        body.AddForce(new Vector3(50f, 0, 0) * (-1 * 10f * Time.deltaTime));
+        body.AddForce(new Vector3(0, 0, 50f) * (10f * Time.deltaTime));
         
-        body.AddTorque(new Vector3(xSpeed, 0, 0) * (ballspeed * Time.deltaTime));
+        body.AddTorque(new Vector3(0, 0, -xSpeed) * (ballspeed * Time.deltaTime));
 
     }
 }

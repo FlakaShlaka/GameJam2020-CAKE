@@ -58,15 +58,15 @@ public class CombineScript : MonoBehaviour
          }*/
 
         //Logic for picking up items by collider
-        if (hit.gameObject.tag == "Pickup")
+        /*if (hit.gameObject.tag == "Pickup")
         {
             hit.transform.parent = transform;
         }
-    }
+    }*/
 
     //Logic for faking picking up
         
-        /*switch (hit.gameObject.name)
+        switch (hit.gameObject.name)
         {
             case "Tire": transform.Find("OnCake_Tire").gameObject.SetActive(true);
                 collection += 1;
@@ -103,7 +103,7 @@ public class CombineScript : MonoBehaviour
                 break;
         }
         hit.gameObject.SetActive(false);
-    }*/
+    }
 
     private static IEnumerator NextLevel()
     {
